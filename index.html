@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZallPanel - Admin Dashboard Template with Bootstrap 5</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="bg-overlay"></div>
+    <div class="row m-0">
+      <div class="col-md-auto p-0">
+        <!-- Sidebar -->
+        <div class="sidebar-wrapper">
+          <div class="sidebar p-3 d-flex flex-column bg-white">
+            <div>
+              <!-- Logo Desktop -->
+              <div class="logo-desktop">
+                <img src="assets/images/zallogo-gradient.png" />
+                <h3 class="title">ZallPanel</h3>
+              </div>
+            </div>
+            <!-- Profile -->
+            <div class="profile d-flex shadow">
+              <!-- <img
+                src="/images/foto.jpeg"
+              /> -->
+              <div class="photo bg-primary-subtle text-primary-emphasis">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                  />
+                </svg>
+              </div>
+              <div class="name">
+                <p class="m-0">John Doe</p>
+                <small class="level">Administrator</small>
+              </div>
+            </div>
+            <!-- Menu -->
+            <div class="menu h-100 bg-white shadow">
+              <ul>
+                <p class="section-name">
+                  <span class="icon">M</span>
+                  <span class="label">Main Menu</span>
+                </p>
+                <li>
+                  <a href="index.html">
+                    <i class="icon fas fa-fw fa-tachometer-alt"></i>
+                    <span class="label">Dashboard</span>
+                  </a>
+                </li>
+                <p class="section-name">
+                  <span class="icon">I</span>
+                  <span class="label">Interface</span>
+                </p>
+                <ul>
+                  <li class="menu-dropdown">
+                    <i class="icon fas fa-fw fa-cog"></i>
+                    <span class="label">Components</span>
+                    <i class="fas fa-solid fa-caret-down"></i>
+                  </li>
+                  <ul class="submenu">
+                    <li>
+                      <a
+                        class="external"
+                        href="https://getbootstrap.com/docs/5.3/components/alerts/#examples"
+                      >
+                        <i class="icon fa-fw fas fa-exclamation-triangle"></i>
+                        <span class="label">Alerts</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="external"
+                        href="https://getbootstrap.com/docs/5.3/components/buttons/#variants"
+                      >
+                        <i class="icon fas fa-fw fa-minus-square"></i>
+                        <span class="label">Buttons</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="external"
+                        href="https://getbootstrap.com/docs/5.3/components/card/#example"
+                      >
+                        <i class="icon fas fa-fw fa-list"></i>
+                        <span class="label">Cards</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="external" href="custom-cards.html">
+                        <i class="icon fas fa-fw fa-list"></i>
+                        <span class="label">Custom Cards</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="external last"
+                        href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                      >
+                        <i class="icon fas fa-fw fa-ellipsis-h"></i>
+                        <span class="label">More</span>
+                      </a>
+                    </li>
+                  </ul>
+                </ul>
+                <ul>
+                  <li class="menu-dropdown">
+                    <i class="icon fas fa-fw fa-wrench"></i>
+                    <span class="label">Utilities</span>
+                    <i class="fas fa-solid fa-caret-down"></i>
+                  </li>
+                  <ul class="submenu">
+                    <li>
+                      <a
+                        class="external"
+                        href="https://getbootstrap.com/docs/5.3/utilities/colors/#colors"
+                      >
+                        <i class="icon fa-fw fas fa-palette"></i>
+                        <span class="label">Colors</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="external"
+                        href="https://getbootstrap.com/docs/5.3/utilities/borders/#border"
+                      >
+                        <i class="icon fas fa-fw fa-border-style"></i>
+                        <span class="label">Borders</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="external"
+                        href="https://getbootstrap.com/docs/5.3/utilities/flex/#enable-flex-behaviors"
+                      >
+                        <i class="icon fab fa-fw fa-buromobelexperte"></i>
+                        <span class="label">Flex</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="external last"
+                        href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                      >
+                        <i class="icon fas fa-fw fa-ellipsis-h"></i>
+                        <span class="label">More</span>
+                      </a>
+                    </li>
+                  </ul>
+                </ul>
+                <p class="section-name">
+                  <span class="icon">A</span>
+                  <span class="label">Addons</span>
+                </p>
+                <ul>
+                  <li class="menu-dropdown">
+                    <i class="icon fas fa-fw fa-folder"></i>
+                    <span class="label">Pages</span>
+                    <i class="fas fa-solid fa-caret-down"></i>
+                  </li>
+                  <ul class="submenu">
+                    <li>
+                      <a
+                        class="external"
+                        href="https://zallpanel.vercel.app/donate"
+                      >
+                        <i class="icon fa-fw fas fa-file-alt"></i>
+                        <span class="label">Donate</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="external"
+                        href="https://zallpanel.vercel.app/premium"
+                      >
+                        <i class="icon fa-fw fas fa-file-alt"></i>
+                        <span class="label">Premium</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="external last" href="https://getbootstrap.com/">
+                        <i class="icon fab fa-fw fa-bootstrap"></i>
+                        <span class="label">Bootstrap 5</span>
+                      </a>
+                    </li>
+                  </ul>
+                </ul>
+                <li>
+                  <a class="external" href="https://www.chartjs.org/">
+                    <i class="icon fas fa-fw fa-chart-area"></i>
+                    <span class="label">Charts</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="external" href="https://fontawesome.com/v5/search">
+                    <i class="icon fas fa-fw fa-icons"></i>
+                    <span class="label">Icons</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="external"
+                    href="https://getbootstrap.com/docs/5.3/content/tables/#overview"
+                  >
+                    <i class="icon fas fa-fw fa-table"></i>
+                    <span class="label">Tables</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col p-0">
+        <!-- Main -->
+        <main class="main-wrapper">
+          <!-- Navbar -->
+          <nav class="navbar-custom">
+            <div class="left">
+              <div class="sidebar-toggle-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="sidebar-toggle-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <!-- Breadcrumb Desktop -->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb desktop ps-3">
+                  <li class="breadcrumb-item" aria-current="page">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Dashboard
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <!-- Logo Mobile -->
+            <div class="logo-mobile">
+              <img src="assets/images/zallogo-gradient.png" alt="" />
+            </div>
+            <div class="right">
+              <p class="text-muted m-0 pe-3">Hello <u>User!</u></p>
+              <div class="menu">
+                <div class="dropdown">
+                  <i
+                    class="fas fa-bell dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></i>
+                  <ul class="dropdown-menu notification">
+                    <li class="px-3 py-1">
+                      <div class="d-flex">
+                        <i class="fas fa-fw fa-stream"></i>
+                        <div class="message ps-3">
+                          <div>First notification</div>
+                          <div>
+                            <small class="text-muted">09:31 06/08/2023</small>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="px-3 py-1">
+                      <div class="d-flex">
+                        <i class="fas fa-fw fa-stream"></i>
+                        <div class="message ps-3">
+                          <div>Second notification</div>
+                          <div>
+                            <small class="text-muted">12:10 18/05/2023</small>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="px-3 py-1">
+                      <div class="d-flex">
+                        <i class="fas fa-fw fa-stream"></i>
+                        <div class="message ps-3">
+                          <div>Third notification</div>
+                          <div>
+                            <small class="text-muted">20:32 12/01/2023</small>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu">
+                <div class="dropdown">
+                  <i
+                    class="fas fa-user dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></i>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" class="dropdown-item">
+                        <i class="fas fa-fw fa-user fa-sm"></i>
+                        <span>Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">
+                        <i class="fas fa-fw fa-list-ul fa-sm"></i>
+                        <span>To do list</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">
+                        <i class="fas fa-fw fa-cogs fa-sm"></i>
+                        <span>Activity Log</span>
+                      </a>
+                    </li>
+                    <hr />
+                    <li>
+                      <a href="#" class="dropdown-item">
+                        <i class="fas fa-fw fa-sign-out-alt fa-sm"></i>
+                        <span>Logout</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Breadcrumb Mobile -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mobile ps-3">
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="/home">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Dashboard
+              </li>
+            </ol>
+          </nav>
+          <!-- Hero -->
+          <div class="hero">
+            <div class="alert alert-primary alert-custom" role="alert">
+              <div class="row">
+                <div class="col">
+                  <h4 class="alert-heading">
+                    <b>Welcome to ZallPanel!</b>
+                  </h4>
+                  <h5 class="alert-heading">
+                    <i>Admin Dashboard Template</i>
+                  </h5>
+                  <hr />
+                  <p>
+                    You can use this free version of the template for personal
+                    or commercial use.
+                    <br />
+                    Donate <a href="donate.html">here</a> to support the
+                    developer!
+                    <br />
+                    <b>
+                      Pay for the premium version (ReactJS, CSS Preprocessor
+                      Source Code)
+                      <a href="premium.html">here!</a>
+                    </b>
+                  </p>
+                  <hr />
+                  <p class="mb-0">
+                    ZallPanel - Admin Dashboard Template Version 4 w/ Bootstrap
+                    5
+                  </p>
+                </div>
+                <div
+                  class="col-md-auto text-end d-none d-md-block text-white ms-3"
+                >
+                  <h1>Sunday,</h1>
+                  <h5>6 August 2023</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content -->
+          <div class="content dashboard">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card border-custom primary shadow mb-3">
+                  <div class="card-header header-custom primary">
+                    Graphics Today
+                  </div>
+                  <div class="card-body">
+                    <div class="linechart">
+                      <canvas id="chartLine"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="card border-custom border-success shadow mb-3">
+                      <div class="card-body">
+                        <div class="icon">
+                          <i
+                            class="text-success fas fa-users fa-sm fa-fw fa-3x"
+                          ></i>
+                          <small class="text-muted">People</small>
+                        </div>
+                        <span class="amount" value="102">0</span>
+                      </div>
+                    </div>
+                    <div class="card border-custom border-warning shadow mb-3">
+                      <div class="card-body">
+                        <div class="icon">
+                          <i
+                            class="text-warning fas fa-shopping-cart fa-sm fa-fw fa-3x"
+                          ></i>
+                          <small class="text-muted">Cart</small>
+                        </div>
+                        <span class="amount" value="12">0</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="card border-custom border-info shadow mb-3">
+                      <div class="card-body">
+                        <div class="icon">
+                          <i
+                            class="text-info fas fa-inbox fa-sm fa-fw fa-3x"
+                          ></i>
+                          <small class="text-muted">Inbox</small>
+                        </div>
+                        <span class="amount" value="25">0</span>
+                      </div>
+                    </div>
+                    <div class="card border-custom border-danger shadow mb-3">
+                      <div class="card-body">
+                        <div class="icon">
+                          <i
+                            class="text-danger fas fa-envelope fa-sm fa-fw fa-3x"
+                          ></i>
+                          <small class="text-muted">Mail</small>
+                        </div>
+                        <span class="amount" value="76">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="card border-0 shadow mb-3">
+                  <div class="card-header header-custom primary">
+                    Orders Today
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex flex-column w-100">
+                      <div class="table-responsive">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th class="text-center">No</th>
+                              <th>Name</th>
+                              <th>Email</th>
+                              <th>Phone</th>
+                              <th>City</th>
+                              <th>Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Patricia P. Harrison</td>
+                              <td>PatriciaPHarrison@dayrep.com</td>
+                              <td>985-819-0681</td>
+                              <td>LA</td>
+                              <td>
+                                <span class="badge rounded-pill text-bg-primary"
+                                  >Pending</span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Jose M. Gaskins</td>
+                              <td>JoseMGaskins@armyspy.com</td>
+                              <td>772-460-5847</td>
+                              <td>Fort Pierce</td>
+                              <td>
+                                <span class="badge rounded-pill text-bg-warning"
+                                  >Inactive</span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Milton C. Mabry</td>
+                              <td>MiltonCMabry@armyspy.com</td>
+                              <td>660-277-4147</td>
+                              <td>Huntsville</td>
+                              <td>
+                                <span class="badge rounded-pill text-bg-success"
+                                  >Active</span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Jason G. Payton</td>
+                              <td>JasonGPayton@teleworm.us</td>
+                              <td>973-952-6449</td>
+                              <td>Whippany</td>
+                              <td>
+                                <span class="badge rounded-pill text-bg-danger"
+                                  >Outdated</span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Verna K. Schafer</td>
+                              <td>VernaKSchafer@teleworm.us</td>
+                              <td>573-846-5552</td>
+                              <td>Manchester</td>
+                              <td>
+                                <span class="badge rounded-pill text-bg-success"
+                                  >Active</span
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="m-auto">
+                        <div class="mt-3 overflow-auto pagination p-1">
+                          <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#">Previous</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-0 shadow mb-3">
+                  <div class="card-header header-custom primary">
+                    Progress Bar
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex flex-column w-100 progress-bar">
+                      <div class="d-flex align-items-center mb-2">
+                        <span>Bootstrap 5</span>
+                        <div class="d-block w-100">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Animated striped example"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar progress-bar-striped progress-bar-animated"
+                              style="width: 100%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-2">
+                        <span>SCSS</span>
+                        <div class="d-block w-100">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Animated striped example"
+                            aria-valuenow="80"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                              style="width: 80%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-2">
+                        <span>JavaScript</span>
+                        <div class="d-block w-100">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Animated striped example"
+                            aria-valuenow="65"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                              style="width: 65%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-2">
+                        <span>ReactJS</span>
+                        <div class="d-block w-100">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Animated striped example"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                              style="width: 100%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-2">
+                        <span>Font Awesome</span>
+                        <div class="d-block w-100">
+                          <div
+                            class="progress"
+                            role="progressbar"
+                            aria-label="Animated striped example"
+                            aria-valuenow="40"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            <div
+                              class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                              style="width: 40%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 shadow mb-3">
+                  <div class="card-header header-custom primary">My Pie</div>
+                  <div class="card-body">
+                    <div class="d-flex flex-column w-100">
+                      <div class="piechart">
+                        <canvas id="chartPie"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-0 shadow mb-3">
+                  <div class="card-header header-custom primary">Find Me!</div>
+                  <div class="card-body">
+                    <div class="d-flex flex-column">
+                      <a href="https://www.facebook.com/rizall.kadamong.1/">
+                        <div class="d-flex align-items-center mb-3">
+                          <i class="fab fa-facebook fa-fw fa-lg me-1"></i>
+                          Rizall Kadamong
+                        </div>
+                      </a>
+                      <a href="https://github.com/rizallk">
+                        <div class="d-flex align-items-center mb-3">
+                          <i class="fab fa-github fa-fw fa-lg me-1"></i>
+                          rizallk
+                        </div>
+                      </a>
+                      <a href="https://www.linkedin.com/in/rizall-kadamong/">
+                        <div class="d-flex align-items-center mb-3">
+                          <i class="fab fa-linkedin fa-fw fa-lg me-1"></i>
+                          Rizall Kadamong
+                        </div>
+                      </a>
+                      <a href="https://rizallk.vercel.app">
+                        <div class="d-flex align-items-center mb-3">
+                          <i class="fas fa-link fa-fw fa-lg me-1"></i>
+                          My Portfolio
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer -->
+          <div class="footer text-muted">
+            &copy; 2023. All rights reserved. Made with 💙 by
+            <a href="https://rizallk.vercel.app">Rizall Kadamong</a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Back to Top -->
+    <svg
+      onclick="backToTop()"
+      xmlns="http://www.w3.org/2000/svg"
+      class="bi bi-arrow-up-square-fill btt"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fillRule="evenodd"
+        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 11.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+      />
+    </svg>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Chart.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+      integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Local script -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/chart.js"></script>
+  </body>
+</html>

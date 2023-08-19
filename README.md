@@ -8,7 +8,7 @@
 </p>
 
 ## Free version
-You can use HTML and CSS from this repository to build your app.
+You can use HTML, CSS and JavaScript from this repository to build your app.
 
 ## Premium version
 You will get ReactJS, CSS Preprocessor (SASS) and several easy-to-use color themes!

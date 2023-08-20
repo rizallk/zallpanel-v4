@@ -16,3 +16,7 @@ You will get ReactJS, CSS Preprocessor (SASS) source code and several easy-to-us
 And you can also request modification to the developer.
 <br/>
 <a href="https://zallpanel.vercel.app/premium">Click here</a> for more information!
+
+## Support
+Support the developer to make more projects like this. <a href="https://trakteer.id/rizall-kadamong">Click here!</a>
+

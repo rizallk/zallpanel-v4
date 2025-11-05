@@ -3,19 +3,10 @@
 
 <p align="center">
 	<a href="https://zallpanel.vercel.app/">Demo Page</a>&nbsp;&nbsp;&nbsp;
-	<a href="https://zallpanel.vercel.app/premium">Premium version</a>&nbsp;&nbsp;&nbsp;
-	<a href="https://rizallk.vercel.app">The developer</a>&nbsp;&nbsp;&nbsp;
+	<a href="https://rizallk.vercel.app">Developer</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-## Free version
-You can use HTML, CSS and JavaScript from this repository to build your app.
-
-## Premium version
-You will get ReactJS, CSS Preprocessor (SASS) source code and several easy-to-use color themes!
-<br/>
-And you can also request modification to the developer.
-<br/>
-<a href="https://zallpanel.vercel.app/premium">Click here</a> for more information!
+<p align="center">Feel free to fork, modify and use it!</p>
 
 ## Support
 Support the developer to make more projects like this. <a href="https://trakteer.id/rizall-kadamong">Click here!</a>

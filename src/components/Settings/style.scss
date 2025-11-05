@@ -1,0 +1,33 @@
+@import '../../assets/scss/variables';
+
+.settings-wrapper {
+  position: fixed;
+  bottom: 90px;
+  right: 0;
+  z-index: 6;
+  border-top-left-radius: 6px;
+  transform: translateX(173px);
+  transition: 0.3s;
+  background-color: #fff;
+
+  &.show {
+    transform: translateX(0);
+  }
+
+  .settings {
+    .icon {
+      position: absolute;
+      color: darken($themeColor, 45%);
+      bottom: -8.5px;
+      left: -45.8px;
+      background-color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      border-right: none !important;
+
+      &:hover {
+        color: darken($themeColor, 30%);
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import './variables';
+
+a {
+  text-decoration: none;
+  transition: 0.2s;
+  color: rgba($themeColor, var(--bs-link-opacity, 1));
+
+  &:hover {
+    color: darken($themeColor, 5%);
+  }
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 !important;
+}
+
+body {
+  &.overflow {
+    // Small devices (landscape phones, less than 768px)
+    // @media only screen and (max-width: 767.98px) {
+    @media only screen and (max-width: 1026.98px) {
+      overflow: hidden;
+    }
+  }
+}
+
+.main-wrapper {
+  position: relative;
+
+  .content {
+    border-radius: 6px;
+    margin-right: 16px;
+
+    .card {
+      .header-custom {
+        background-color: transparent;
+        margin: 0 16px;
+        padding: 11px 0 11px 0;
+
+        &.primary {
+          color: darken($primaryColor, 10%);
+        }
+
+        &.success {
+          color: darken($successColor, 10%);
+        }
+
+        &.danger {
+          color: darken($dangerColor, 10%);
+        }
+      }
+
+      .footer-custom {
+        background-color: transparent;
+        margin: 0 16px;
+        padding: 11px 0 11px 0;
+      }
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    // @media only screen and (max-width: 767.98px) {
+    @media only screen and (max-width: 1026.98px) {
+      margin: 0 16px 16px;
+    }
+  }
+}
+
+.border-custom {
+  border: 0;
+  border-left: 13px solid transparent;
+
+  &.primary {
+    border-color: darken($primaryColor, 10%);
+  }
+
+  &.success {
+    border-color: darken($successColor, 5%);
+  }
+
+  &.danger {
+    border-color: darken($dangerColor, 5%);
+  }
+}
+
+.page-link {
+  text-decoration: none;
+  transition: 0.2s;
+  color: rgba($themeColor, var(--bs-link-opacity, 1));
+
+  &:hover {
+    color: darken($themeColor, 5%);
+  }
+
+  &:focus {
+    color: darken($themeColor, 7%);
+  }
+}
+
+.dropdown-item {
+  &:active {
+    background-color: $themeColor;
+  }
+}

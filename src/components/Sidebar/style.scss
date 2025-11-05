@@ -1,0 +1,395 @@
+@import '../../assets/scss/variables';
+
+.sidebar-wrapper {
+  position: fixed;
+  transform: translateX(-260px);
+  transition: all 0.4s;
+  opacity: 0;
+  height: 100%;
+
+  &.open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  &:hover {
+    .sidebar {
+      width: 260px !important;
+
+      .profile {
+        img {
+          width: 70px !important;
+          border-radius: 0 !important;
+        }
+
+        .photo {
+          flex-basis: 70px !important;
+          border-radius: 0 !important;
+        }
+
+        .name {
+          opacity: 1 !important;
+        }
+      }
+
+      .menu {
+        overflow-y: overlay !important;
+
+        ul {
+          li .label {
+            opacity: 1 !important;
+          }
+
+          .section-name {
+            .icon {
+              opacity: 0 !important;
+            }
+
+            .label {
+              opacity: 1 !important;
+            }
+          }
+
+          .menu-dropdown {
+            .fa-caret-down {
+              opacity: 1 !important;
+            }
+          }
+        }
+      }
+
+      .logo-desktop {
+        justify-content: center !important;
+
+        img {
+          transform: translateX(0) !important;
+        }
+
+        .title {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    width: 260px;
+    transition: 0.4s ease;
+    height: 100vh;
+
+    &.minimized {
+      width: 111px;
+    }
+
+    .logo-desktop {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      height: 78px;
+
+      &.minimized {
+        justify-content: flex-start;
+      }
+
+      img {
+        width: 60px;
+        transform: translateX(0);
+        transition: 0.3s;
+
+        &.minimized {
+          transform: translateX(
+            10px
+          ); // Transform sesuaikan dengan ukuran logo agar bisa pas di tengah-tengah
+        }
+      }
+
+      .title {
+        opacity: 1;
+        transition: 0.3s;
+
+        &.minimized {
+          opacity: 0;
+        }
+      }
+
+      // Medium devices (tablets, 768px and up)
+      // @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1027px) {
+        display: flex;
+      }
+    }
+
+    .profile {
+      margin: 20px 0;
+      border-radius: 0 6px 0 0;
+      height: 65px;
+      white-space: nowrap;
+
+      img {
+        width: 70px;
+        height: auto;
+        padding: 0;
+        object-fit: cover;
+        object-position: center;
+        transition: 0.3s;
+
+        border-radius: 0;
+
+        &.minimized {
+          width: 79px;
+          border-radius: 0 6px 0 0;
+        }
+      }
+
+      .photo {
+        height: auto;
+        flex-basis: 70px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        padding: 11px 11px 0 11px;
+
+        svg {
+          fill: lighten($themeColor, 10%);
+          width: 100%;
+          height: 100%;
+        }
+
+        &.minimized {
+          flex-basis: 80px;
+          border-radius: 0 6px 0 0;
+        }
+      }
+
+      .name {
+        border-radius: 0 6px 0 0;
+        padding: 7px 12px;
+        opacity: 1;
+        width: 100%;
+        transition: opacity 0.3s;
+        background-color: darken($themeColor, 4%);
+        color: #fff;
+        white-space: break-spaces;
+
+        &.minimized {
+          opacity: 0;
+        }
+
+        // Small devices (landscape phones, less than 768px)
+        // @media only screen and (max-width: 767.98px) {
+        @media only screen and (max-width: 1026.98px) {
+          border-radius: 0;
+        }
+      }
+
+      // Small devices (landscape phones, less than 768px)
+      // @media only screen and (max-width: 767.98px) {
+      @media only screen and (max-width: 1026.98px) {
+        margin: 0;
+      }
+    }
+
+    .menu {
+      background-color: #fff;
+      padding: 17px 15px;
+      border-radius: 0 0 6px 0;
+      overflow-y: overlay;
+      overflow-x: hidden;
+      position: relative;
+
+      &.minimized {
+        overflow-y: hidden;
+      }
+
+      // Scrollbar Custom
+      /* width */
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #f1f1f19d;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #ddd;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #bebebe;
+      }
+
+      ul {
+        .section-name {
+          font-weight: 600;
+          font-size: 17px;
+          color: darken($themeColor, 30%);
+          margin-bottom: 12px;
+          padding-top: 10px;
+          white-space: nowrap;
+          opacity: 1;
+
+          .icon {
+            // padding-left: 17px;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            width: 61%;
+            text-align: center;
+
+            &.minimized {
+              opacity: 1;
+            }
+          }
+
+          .label {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+
+            &.minimized {
+              opacity: 0;
+            }
+          }
+
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+
+        a {
+          padding: 8px 14px;
+          margin-bottom: 12px;
+          transition: 0.3s;
+          color: darken($themeColor, 10%);
+          cursor: pointer;
+          white-space: nowrap;
+          border-radius: 6px;
+          display: block;
+          background-color: #fff;
+
+          &.active {
+            background-color: $themeColor !important;
+            color: #fff !important;
+          }
+
+          &:hover {
+            background-color: $themeColor;
+            color: #fff;
+          }
+        }
+
+        i.icon {
+          width: 21px;
+        }
+
+        li .label {
+          transition: opacity 0.3s ease;
+          opacity: 1;
+          padding-left: 7px;
+
+          &.minimized {
+            opacity: 0;
+          }
+        }
+
+        .menu-dropdown {
+          padding: 8px 14px;
+          margin-bottom: 12px;
+          transition: 0.3s;
+          color: darken($themeColor, 10%);
+          cursor: pointer;
+          white-space: nowrap;
+          border-radius: 6px;
+          display: block;
+
+          &:hover {
+            background-color: $themeColor;
+            color: #fff;
+          }
+
+          &.active {
+            border: 1px solid $themeColor;
+          }
+
+          .fa-caret-down {
+            font-size: 20px;
+            margin-top: 2px;
+            right: 29px;
+            position: absolute;
+            transform: rotate(90deg);
+            transition: 0.2s ease;
+            transition-property: opacity, transform;
+            opacity: 1;
+
+            &.active {
+              transform: rotate(0deg);
+            }
+
+            &.minimized {
+              opacity: 0;
+            }
+          }
+        }
+
+        .submenu {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-out;
+          background-color: #f6f6f6;
+          border-radius: 6px;
+
+          li a {
+            background-color: transparent;
+
+            &:hover {
+              background-color: $themeColor;
+              color: #fff;
+            }
+          }
+
+          &.active {
+            max-height: 500px;
+            overflow: visible;
+            display: block;
+          }
+        }
+      }
+
+      // Small devices (landscape phones, less than 768px)
+      // @media only screen and (max-width: 767.98px) {
+      @media only screen and (max-width: 1026.98px) {
+        box-shadow: none !important;
+      }
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    // @media only screen and (max-width: 767.98px) {
+    @media only screen and (max-width: 1026.98px) {
+      padding: 0 !important;
+    }
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  // @media only screen and (max-width: 767.98px) {
+  @media only screen and (max-width: 1026.98px) {
+    z-index: 5;
+    width: 260px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  // @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1027px) {
+    transform: translate(0);
+    position: relative;
+    opacity: 1;
+  }
+}

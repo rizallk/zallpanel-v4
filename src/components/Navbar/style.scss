@@ -1,0 +1,210 @@
+@import '../../assets/scss/variables';
+
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 60px;
+  position: relative;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .sidebar-toggle-desktop,
+    .sidebar-toggle-mobile {
+      cursor: pointer;
+      display: block;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+
+      &:hover {
+        span {
+          background-color: darken($themeColor, 30%);
+        }
+      }
+
+      span {
+        transition: 0.3s;
+        margin-bottom: 5px;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: darken($themeColor, 45%);
+        border-radius: 3px;
+      }
+
+      span:nth-child(3) {
+        margin-bottom: 0;
+      }
+
+      // Small devices (landscape phones, less than 768px)
+      // @media only screen and (max-width: 767.98px) {
+      @media only screen and (max-width: 1026.98px) {
+        display: none;
+      }
+    }
+
+    .sidebar-toggle-desktop {
+      display: block;
+
+      // Small devices (landscape phones, less than 768px)
+      // @media only screen and (max-width: 767.98px) {
+      @media only screen and (max-width: 1026.98px) {
+        display: none;
+      }
+    }
+
+    .sidebar-toggle-mobile {
+      display: block;
+      padding: 16px;
+
+      // Medium devices (tablets, 768px and up)
+      // @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1027px) {
+        display: none;
+      }
+    }
+  }
+
+  .logo-mobile {
+    display: block;
+    height: 100%;
+    padding: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    // @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1027px) {
+      display: none;
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+
+    p {
+      // Small devices (landscape phones, less than 768px)
+      // @media only screen and (max-width: 767.98px) {
+      @media only screen and (max-width: 1026.98px) {
+        display: none;
+      }
+    }
+
+    .dropdown {
+      .dropdown-toggle {
+        margin: 16px 16px 16px 3px;
+        font-size: 25px;
+        color: darken($themeColor, 45%);
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &::after {
+          display: none;
+        }
+
+        &:hover {
+          color: darken($themeColor, 30%);
+        }
+      }
+
+      .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        position: absolute;
+        inset: 0px 0px auto auto;
+        margin: 14px 0 0 !important;
+        transform: translate(-16px, 45px);
+
+        &.show {
+          opacity: 1;
+          visibility: visible;
+          margin-top: 4px !important;
+        }
+
+        &.notification {
+          width: 65vw;
+
+          // Medium devices (tablets, 768px and up)
+          // @media only screen and (min-width: 768px) {
+          @media only screen and (min-width: 1027px) {
+            width: 300px;
+          }
+
+          i {
+            font-size: 30px;
+            width: auto;
+            display: flex;
+            align-items: center;
+          }
+
+          span {
+            padding: 0;
+          }
+        }
+
+        hr {
+          margin: 8px;
+        }
+
+        li a {
+          color: darken($themeColor, 10%);
+
+          &:active {
+            color: #fff;
+          }
+
+          i {
+            width: 18px;
+          }
+
+          span {
+            padding-left: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  // @media only screen and (max-width: 767.98px) {
+  @media only screen and (max-width: 1026.98px) {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+}
+
+.breadcrumb {
+  &.desktop {
+    // Small devices (landscape phones, less than 768px)
+    // @media only screen and (max-width: 767.98px) {
+    @media only screen and (max-width: 1026.98px) {
+      display: none;
+    }
+  }
+
+  &.mobile {
+    padding: 16px;
+
+    // Medium devices (tablets, 768px and up)
+    // @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1027px) {
+      display: none;
+    }
+  }
+}

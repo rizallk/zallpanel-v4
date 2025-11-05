@@ -1,4 +1,5 @@
-@import '../../assets/scss/variables';
+@use '../../assets/scss/variables' as *;
+@use 'sass:color';
 
 .hero {
   .alert {
@@ -12,7 +13,7 @@
         background-image: linear-gradient(
           to right,
           transparent 0%,
-          lighten($themeColor, 16%) 100%
+          #{color.adjust($themeColor, $lightness: 16%)} 100%
         ) !important;
       }
     }

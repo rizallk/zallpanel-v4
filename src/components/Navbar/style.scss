@@ -1,4 +1,5 @@
-@import '../../assets/scss/variables';
+@use '../../assets/scss/variables' as *;
+@use 'sass:color';
 
 .navbar-custom {
   display: flex;
@@ -22,7 +23,7 @@
 
       &:hover {
         span {
-          background-color: darken($themeColor, 30%);
+          background-color: #{color.adjust($themeColor, $lightness: -30%)};
         }
       }
 
@@ -32,7 +33,7 @@
         display: block;
         width: 30px;
         height: 3px;
-        background-color: darken($themeColor, 45%);
+        background-color: #{color.adjust($themeColor, $lightness: -45%)};
         border-radius: 3px;
       }
 
@@ -106,7 +107,7 @@
       .dropdown-toggle {
         margin: 16px 16px 16px 3px;
         font-size: 25px;
-        color: darken($themeColor, 45%);
+        color: #{color.adjust($themeColor, $lightness: -45%)};
         cursor: pointer;
         transition: color 0.3s;
 
@@ -115,7 +116,7 @@
         }
 
         &:hover {
-          color: darken($themeColor, 30%);
+          color: #{color.adjust($themeColor, $lightness: -30%)};
         }
       }
 
@@ -161,7 +162,7 @@
         }
 
         li a {
-          color: darken($themeColor, 10%);
+          color: #{color.adjust($themeColor, $lightness: -10%)};
 
           &:active {
             color: #fff;

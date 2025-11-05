@@ -1,4 +1,5 @@
-@import './variables';
+@use './variables' as *;
+@use 'sass:color';
 
 a {
   text-decoration: none;
@@ -6,7 +7,7 @@ a {
   color: rgba($themeColor, var(--bs-link-opacity, 1));
 
   &:hover {
-    color: darken($themeColor, 5%);
+    color: #{color.adjust($themeColor, $lightness: -5%)};
   }
 }
 
@@ -41,15 +42,15 @@ body {
         padding: 11px 0 11px 0;
 
         &.primary {
-          color: darken($primaryColor, 10%);
+          color: #{color.adjust($primaryColor, $lightness: -10%)};
         }
 
         &.success {
-          color: darken($successColor, 10%);
+          color: #{color.adjust($successColor, $lightness: -10%)};
         }
 
         &.danger {
-          color: darken($dangerColor, 10%);
+          color: #{color.adjust($dangerColor, $lightness: -10%)};
         }
       }
 
@@ -73,15 +74,15 @@ body {
   border-left: 13px solid transparent;
 
   &.primary {
-    border-color: darken($primaryColor, 10%);
+    border-color: #{color.adjust($primaryColor, $lightness: -10%)};
   }
 
   &.success {
-    border-color: darken($successColor, 5%);
+    border-color: #{color.adjust($successColor, $lightness: -5%)};
   }
 
   &.danger {
-    border-color: darken($dangerColor, 5%);
+    border-color: #{color.adjust($dangerColor, $lightness: -5%)};
   }
 }
 
@@ -91,11 +92,11 @@ body {
   color: rgba($themeColor, var(--bs-link-opacity, 1));
 
   &:hover {
-    color: darken($themeColor, 5%);
+    color: #{color.adjust($themeColor, $lightness: -5%)};
   }
 
   &:focus {
-    color: darken($themeColor, 7%);
+    color: #{color.adjust($themeColor, $lightness: -7%)};
   }
 }
 
